@@ -2,7 +2,7 @@
 
 ## 📝 About
 
-42_libft is the first project from 42 School, where you have to reimplement a set of standard C library functions.
+libft is the first project from 42 School, where you have to reimplement a set of standard C library functions.
 The project emphasizes:
 
 🔹 Mastering C fundamentals
