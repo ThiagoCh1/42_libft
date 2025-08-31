@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/30 17:13:22 by thribeir          #+#    #+#             */
-/*   Updated: 2025/08/31 01:14:27 by thribeir         ###   ########.fr       */
+/*   Created: 2025/08/31 01:04:01 by thribeir          #+#    #+#             */
+/*   Updated: 2025/08/31 01:14:07 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_isdigit(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
+
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -27,7 +27,7 @@ int main(void)
     for (int i = 0; i < size; i++)
     {
         char c = test_chars[i];
-        printf("Testando '%c': %d\n", c, ft_isalpha(c));
+        printf("Testando '%c': %d\n", c, ft_isdigit(c));
     }
 
     return 0;

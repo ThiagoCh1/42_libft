@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/30 17:13:22 by thribeir          #+#    #+#             */
-/*   Updated: 2025/08/31 01:14:27 by thribeir         ###   ########.fr       */
+/*   Created: 2025/08/31 03:04:34 by thribeir          #+#    #+#             */
+/*   Updated: 2025/08/31 03:11:19 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
-{
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
-/*
 #include <stdio.h>
 
-int main(void)
+void	ft_bzero(void *ptr, size_t n)
 {
-    char test_chars[] = {'A', 'z', '0', '#', 'm', 'Z'};
-    int size = sizeof(test_chars) / sizeof(test_chars[0]);
+	size_t			i;
+	unsigned char	*byte_ptr;
 
-    for (int i = 0; i < size; i++)
-    {
-        char c = test_chars[i];
-        printf("Testando '%c': %d\n", c, ft_isalpha(c));
-    }
+	byte_ptr = (unsigned char *)ptr;
+	i = 0;
+	while (i < n)
+	{
+		byte_ptr[i] = 0;
+		i++;
+	}
+}
 
-    return 0;
+/*int main(void)
+{
+    char buffer[6] = "hello";
+
+    printf("Before: %s\n", buffer);
+    ft_bzero(buffer, 5);
+    printf("After:  %s\n", buffer);
+
+    return (0);
 }*/
