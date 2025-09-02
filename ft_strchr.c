@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 06:11:38 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/01 06:21:00 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/02 05:13:27 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strchr(const char *str, int c)
 	return (NULL);
 }
 
-int main(void)
+/*int main(void)
 {
     char *test_str = "hello world";
     char *result;
@@ -35,4 +35,4 @@ int main(void)
     printf("Found 'o': '%s'\n", result);
 
     return (0);
-}
+}*/
