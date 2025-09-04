@@ -6,12 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 17:47:48 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 18:00:41 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:07:58 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *str)
 {
@@ -39,7 +38,10 @@ char	*ft_strdup(const char *str)
 	return (dest);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
 	const char *original = "Hello, World!";
 	char *duplicate;

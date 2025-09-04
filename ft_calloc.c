@@ -6,12 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 17:05:00 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 17:46:06 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:08:59 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t n, size_t size)
 {
@@ -26,7 +25,6 @@ void	*ft_calloc(size_t n, size_t size)
 	if (ptr == NULL)
 		return (NULL);
 	byte_ptr = (unsigned char *)ptr;
-
 	while (i < len)
 	{
 		byte_ptr[i] = 0;
@@ -35,7 +33,10 @@ void	*ft_calloc(size_t n, size_t size)
 	return (ptr);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
 	int *arr;
 	int i;

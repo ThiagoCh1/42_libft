@@ -6,9 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 01:37:31 by thribeir          #+#    #+#             */
-/*   Updated: 2025/08/31 01:43:36 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:07:09 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -17,7 +19,8 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int main(void)
 {

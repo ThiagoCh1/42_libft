@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 06:02:08 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/01 06:08:22 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:08:36 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
@@ -19,7 +19,10 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
     char test_chars[] = {'a', 'z', 'H', '5', ' ', 'm'};
     int i;

@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 21:02:35 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/03 21:36:15 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:08:19 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *str, const char *needle, size_t len)
 {
@@ -37,7 +37,10 @@ char	*ft_strnstr(const char *str, const char *needle, size_t len)
 	return (NULL);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
 	const char *haystack = "Hello, World!";
 	const char *needle = "World";

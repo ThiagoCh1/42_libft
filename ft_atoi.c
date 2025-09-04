@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 21:36:42 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/03 21:55:43 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:06:45 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -37,7 +37,10 @@ int	ft_atoi(const char *str)
 	return (num * sign);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
 	const char *test_str = "  -42abc";
 	int result;

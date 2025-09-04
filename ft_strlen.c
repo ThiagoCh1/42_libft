@@ -6,15 +6,15 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 16:52:56 by thribeir          #+#    #+#             */
-/*   Updated: 2025/08/30 21:19:17 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:12:57 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	while (*str)
@@ -25,8 +25,12 @@ int	ft_strlen(char *str)
 	return (count);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
-	int a = ft_strlen("donkey");
-	printf("%d\n", a);
-}*/
+	size_t a = ft_strlen("donkey");
+	printf("%ld\n", a);
+}
+*/

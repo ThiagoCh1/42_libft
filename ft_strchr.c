@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 06:11:38 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/02 05:13:27 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:07:53 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -25,7 +25,10 @@ char	*ft_strchr(const char *str, int c)
 	return (NULL);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
     char *test_str = "hello world";
     char *result;

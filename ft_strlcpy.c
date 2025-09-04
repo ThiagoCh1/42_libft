@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 16:19:08 by thribeir          #+#    #+#             */
-/*   Updated: 2025/08/31 16:42:39 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:08:07 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
@@ -32,7 +32,10 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (i);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
     char dest[6];
     char *source = "hello world";

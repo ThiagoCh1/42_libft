@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 05:26:08 by thribeir          #+#    #+#             */
-/*   Updated: 2025/08/31 06:26:50 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:07:36 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -29,7 +29,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
     char source[] = "hello world";
     char destination[20];

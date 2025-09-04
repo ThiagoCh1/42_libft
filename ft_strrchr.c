@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 06:29:48 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/02 05:12:57 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:08:28 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {
@@ -28,7 +28,10 @@ char	*ft_strrchr(const char *str, int c)
 	return (last_found);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
     char *test_str = "hello world";
     char *result;

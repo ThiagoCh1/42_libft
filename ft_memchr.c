@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/02 06:02:35 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/02 06:14:02 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:07:28 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
@@ -28,7 +28,10 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	return (NULL);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
     char data[] = "hello\0world";  // 11 bytes with embedded null
     char *result;
