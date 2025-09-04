@@ -6,13 +6,13 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 16:52:56 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 22:12:57 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/04 22:59:42 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	count;
 
