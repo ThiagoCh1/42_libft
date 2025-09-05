@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 22:20:22 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 23:03:33 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/05 01:03:07 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int main(void)
 {
