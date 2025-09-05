@@ -6,13 +6,13 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 01:10:59 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/05 02:08:51 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/05 15:03:35 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	words;
 	int	i;
@@ -33,7 +33,7 @@ int	count_words(char const *s, char c)
 	return (words);
 }
 
-char	**free_all(char **arr)
+static char	**free_all(char **arr)
 {
 	int	i;
 
@@ -47,7 +47,7 @@ char	**free_all(char **arr)
 	return (NULL);
 }
 
-char	**create_arr(char const *s, char c, char **arr)
+static char	**create_arr(char const *s, char c, char **arr)
 {
 	int	i;
 	int	start;
@@ -87,8 +87,7 @@ char	**ft_split(char const *s, char c)
 	return (arr);
 }
 
-/*
-void	free_split_result(char **result)
+/*void	free_split_result(char **result)
 {
 	int i = 0;
 	while (result[i])
