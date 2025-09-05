@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/30 16:52:56 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/05 23:09:53 by thribeir         ###   ########.fr       */
+/*   Created: 2025/09/05 22:48:40 by thribeir          #+#    #+#             */
+/*   Updated: 2025/09/05 23:00:55 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-size_t	ft_strlen(const char *str)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	count;
-
-	count = 0;
-	while (*str)
-	{
-		count++;
-		str++;
-	}
-	return (count);
+	write (fd, &c, 1);
 }
 
-/*
-#include <stdio.h>
-
-int main(void)
+/*int	main(void)
 {
-	size_t a = ft_strlen("donkey");
-	printf("%ld\n", a);
+	ft_putchar_fd('A', 1); // stdout → should print 'A'
+	ft_putchar_fd('\n', 1);
+
+	ft_putchar_fd('B', 2); // stderr → still prints 'B' to terminal
+	ft_putchar_fd('\n', 2);
+
+	return (0);
 }
 */

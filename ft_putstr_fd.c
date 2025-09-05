@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/30 16:52:56 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/05 23:09:53 by thribeir         ###   ########.fr       */
+/*   Created: 2025/09/05 22:52:51 by thribeir          #+#    #+#             */
+/*   Updated: 2025/09/05 23:07:56 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	count;
-
-	count = 0;
-	while (*str)
+	if (!s)
+		return ;
+	while (*s)
 	{
-		count++;
-		str++;
+		ft_putchar_fd(*s, fd);
+		s++;
 	}
-	return (count);
 }
 
-/*
-#include <stdio.h>
-
-int main(void)
+/*int	main(void)
 {
-	size_t a = ft_strlen("donkey");
-	printf("%ld\n", a);
+	ft_putstr_fd("Hello, stdout!\n", 1);
+	ft_putstr_fd("Hello, stderr!\n", 2);
+	ft_putstr_fd(NULL, 1); // should do nothing safely
+	return (0);
 }
 */

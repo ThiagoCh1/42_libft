@@ -1,36 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/30 16:52:56 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/05 23:09:53 by thribeir         ###   ########.fr       */
+/*   Created: 2025/09/05 22:14:42 by thribeir          #+#    #+#             */
+/*   Updated: 2025/09/05 22:36:46 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	count;
+	size_t	i;
 
-	count = 0;
-	while (*str)
+	i = 0;
+	if (!s || !f)
+		return ;
+	while (s[i])
 	{
-		count++;
-		str++;
+		f((unsigned int)i, &s[i]);
+		i++;
 	}
-	return (count);
 }
 
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 
-int main(void)
+void	alt_case(unsigned int i, char *c)
 {
-	size_t a = ft_strlen("donkey");
-	printf("%ld\n", a);
+	if (i % 2 == 0)
+		*c = ft_toupper(*c);
+	else
+		*c = ft_tolower(*c);
+}
+
+int	main(void)
+{
+	char	str[] = "Hello World!";
+
+	printf("Before : %s\n", str);
+	ft_striteri(str, alt_case);
+	printf("After  : %s\n", str);
+	return (0);
 }
 */
