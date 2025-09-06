@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 08:54:25 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/06 09:15:17 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/06 19:39:41 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (new)
-	{
-		new -> next = *lst;
-		*lst = new;
-	}
+	if (!new)
+		return ;
+	new -> next = *lst;
+	*lst = new;
 }
 
 /*#include <stdio.h>
