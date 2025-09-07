@@ -27,9 +27,9 @@ The project emphasizes:
 
 Compile and test with:
 
-<pre> gcc -Wall -Wextra -Werror *.c 
+<pre> gcc -Wall -Wextra -Werror *.c
  ./a.out </pre>
- 
+
 
 
 You can also use a Makefile for easier compilation:
