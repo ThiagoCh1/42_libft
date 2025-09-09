@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 16:19:08 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 22:08:07 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/09/09 20:34:50 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	i = 0;
 	if (size > 0)
 	{
-		while (i < size - 1 && *src)
+		while (i < size - 1 && src[i])
 		{
 			dest[i] = src[i];
 			i++;
