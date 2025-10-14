@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/02 06:02:35 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 22:07:28 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/14 03:39:23 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	byte_str = (unsigned char *)str;
 	while (i < n)
 	{
-		if (byte_str[i] == c)
+		if (byte_str[i] == (unsigned char)c)
 			return ((void *)&byte_str[i]);
 		i++;
 	}

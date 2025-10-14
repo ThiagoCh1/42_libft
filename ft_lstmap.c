@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 16:36:36 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/07 12:10:28 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/14 04:25:17 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_head;
 	void	*new_content;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	new_head = NULL;
 	while (lst)

@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 06:29:48 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 22:08:28 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/14 03:38:28 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strrchr(const char *str, int c)
 	last_found = NULL;
 	while (*str)
 	{
-		if (*str == c)
+		if (*str == (unsigned char)c)
 			last_found = ((char *)str);
 		str++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)str);
 	return (last_found);
 }

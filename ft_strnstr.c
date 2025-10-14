@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 21:02:35 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 22:08:19 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/14 04:02:03 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strnstr(const char *str, const char *needle, size_t len)
 
 	if (!*needle)
 		return ((char *)str);
-	if (!str || !needle)
-		return (NULL);
 	i = 0;
 	while (i < len && str[i])
 	{

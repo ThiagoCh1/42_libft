@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 05:26:08 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/04 22:07:36 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/14 03:53:06 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*dest_byte;
 	const unsigned char	*src_byte;
 
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	dest_byte = (unsigned char *)dest;
 	src_byte = (const unsigned char *)src;
 	i = 0;
@@ -38,7 +40,7 @@ int main(void)
     char destination[20];
 
     printf("Source: %s\n", source);
-    ft_memcpy(destination, source, 11);  // 11 includes the null terminator
+    ft_memcpy(destination, source, 11);
     printf("Destination: %s\n", destination);
 
     return (0);

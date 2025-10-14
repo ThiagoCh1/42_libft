@@ -6,7 +6,7 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 06:11:38 by thribeir          #+#    #+#             */
-/*   Updated: 2025/09/05 01:03:37 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/14 03:37:43 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ char	*ft_strchr(const char *str, int c)
 {
 	while (*str)
 	{
-		if (*str == c)
+		if (*str == (unsigned char)c)
 			return ((char *)str);
 		str++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)str);
 	return (NULL);
 }
