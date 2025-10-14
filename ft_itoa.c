@@ -6,19 +6,21 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 15:18:56 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/13 14:06:18 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:06:21 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <limits.h>
 
 static int	get_len(long n)
 {
 	int	count;
 
+	count = 0;
 	if (n == 0)
 		return (1);
-	count = 0;
 	if (n < 0)
 	{
 		count++;
@@ -36,27 +38,27 @@ char	*ft_itoa(int n)
 {
 	long	ln;
 	int		len;
-	char	*num;
+	char	*s;
 
-	ln = n;
+	ln = (long)n;
 	len = get_len(ln);
-	num = malloc(len + 1);
-	if (!num)
+	s = (char *)malloc(len + 1);
+	if (!s)
 		return (NULL);
-	num[len] = '\0';
-	if (ln == 0)
-		num[0] = '0';
+	s[len] = '\0';
 	if (ln < 0)
 	{
-		num[0] = '-';
+		s[0] = '-';
 		ln = -ln;
 	}
+	if (ln == 0)
+		s[--len] = '0';
 	while (ln > 0)
 	{
-		num[--len] = (ln % 10) + '0';
+		s[--len] = (char)('0' + (ln % 10));
 		ln /= 10;
 	}
-	return (num);
+	return (s);
 }
 
 /*
