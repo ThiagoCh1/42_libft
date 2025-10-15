@@ -6,16 +6,15 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 21:44:28 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/07 10:42:05 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:48:59 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>  // For size_t and malloc
+# include <stdlib.h>
 
-// Function prototypes
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
